@@ -7,7 +7,7 @@ import Text.Read (readMaybe)
 import System.Exit (exitFailure)
 import Ohms.Conversions
 
-getInput :: String -> IO (Float)
+getInput :: String -> IO Float
 getInput parameter = do
   printf "What's the %s?\n" parameter
   iv <- getLine
@@ -43,5 +43,5 @@ main = do
   --let power = (max_current ** 2) * resistance
   printf "Mosfet power dissipation:\t%.2f\tW\n" power
 
-  printf "Zener Volage Nominal (Vz):\t<%.2f\tV\n" $ zener_d
+  printf "Zener Volage Nominal (Vz):\t<%.2f\tV\n" zener_d
   

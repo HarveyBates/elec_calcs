@@ -35,7 +35,7 @@ fromVItoP :: Float -> Float -> Float
 fromVItoP v i = v * i
 
 fromIRtoP :: Float -> Float -> Float
-fromIRtoP i r = (i**2) / r
+fromIRtoP i r = (i**2) * r
 
 fromVRtoP :: Float -> Float -> Float
 fromVRtoP v r = (v**2) / r
